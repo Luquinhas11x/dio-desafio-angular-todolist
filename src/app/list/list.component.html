@@ -1,0 +1,29 @@
+<body class="all-page">
+  <section class="all-section">
+    <h1 class="title">TODO LIST with Angular <i class="fa-solid fa-list-check list-icon"></i></h1>
+
+    <div class="input-section">
+      <input class="input" [(ngModel)]="todo" type="text" (keyup.enter)="addTodo()" placeholder="              Digite aqui...">
+    </div>
+
+    <button type="submit" class="submit-button" (click)="addTodo()">adicionar</button>
+
+    <div *ngFor="let todo of todoList">
+      <div class="list">
+        <input class="checkbox" type="checkbox" [(ngModel)]="todo.isDone">
+
+        <input class="input" type="text" [(ngModel)]="todo.name" [readonly]="todo.readonly"
+          [ngClass]="{'doneTodo': todo.isDone, 'notDoneTodo': !todo.isDone}">
+
+        <button (click)="todo.readonly = !todo.readonly">
+          <div *ngIf="todo.readonly == true; else saveIcon"><i class="fa-solid fa-pen-to-square edit-icon"></i></div>
+
+          <ng-template #saveIcon><i class="fa-solid fa-download save-icon"></i></ng-template>
+        </button>
+
+        <button class="delete-button icon" (click)="deleteTodo(todo, todo.id)"><i
+            class="fa-solid fa-trash"></i></button>
+      </div>
+    </div>
+  </section>
+</body>

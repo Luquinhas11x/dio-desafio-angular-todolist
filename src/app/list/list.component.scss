@@ -1,0 +1,130 @@
+//// events ///////
+.doneTodo {
+  text-decoration: line-through;
+}
+
+.notDoneTodo {
+  text-decoration: none;
+}
+
+
+///// styles //////
+
+.all-page {
+  font-size: 20px;
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  font-size: 40px;
+  border-bottom: 1px solid black;
+}
+
+.list-icon {
+  margin-left: 10px;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  padding-left: 4px;
+}
+
+.input::placeholder {
+  color: rgb(87, 65, 65);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.all-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  transition: .5s;
+}
+
+.list:hover {
+  background-color: rgba(240, 248, 255, 0.205);
+  cursor: pointer;
+}
+
+.submit-button {
+  padding: 3px 100px 3px 100px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  background-color: rgb(36, 32, 32);
+  transition: .5s;
+  margin-top: 3px;
+}
+
+.submit-button:hover {
+  background-color: crimson;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.delete-button {
+  margin: 3px;
+
+}
+
+.delete-button:hover {
+  color: rgb(209, 30, 30);
+}
+
+.editButton {
+  margin: 3px;
+}
+
+.edit-icon {
+  font-size: 16px;
+  transition: .5s;
+}
+
+.edit-icon:hover {
+  color: rgb(185, 185, 40);
+}
+
+.save-icon {
+  font-size: 16px;
+  transition: .5s;
+}
+
+.save-icon:hover {
+  color: green;
+}
+
+.checkbox {
+  margin-right: 3px;
+}

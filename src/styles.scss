@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+///// reset ///////
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//// styles ///////
+
+body {
+  background-color: rgb(128, 115, 214);
+  font-family: 'Edu SA Beginner', cursive;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}

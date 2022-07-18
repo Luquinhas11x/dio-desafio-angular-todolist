@@ -1,0 +1,28 @@
+.routes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 75, 78);
+  padding: 25px;
+}
+
+.routes a {
+  margin: 4px;
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+
+.routes a:hover {
+  color: crimson;
+}
+
+.links {
+  margin-top: 5px;
+}
+
+.home {
+  border-right: 1px solid white;
+  padding-right: 8px;
+}

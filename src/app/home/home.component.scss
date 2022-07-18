@@ -1,0 +1,54 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    
+}
+
+.home h1{
+    font-size: 55px;
+}
+
+.home h3 {
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.solution-span {
+    display: block;
+    color: rgb(204, 32, 32);
+}
+
+.solution-span::after {
+    content: 'organização?';
+    animation: solution 8s infinite;
+}
+
+@keyframes solution {
+    25% {
+        content: 'falta de tempo?';
+    }
+
+    50% {
+        content: 'compromisso?';
+    }
+
+    75% {
+        content: 'desempenho?';
+    }
+}
+
+.timing-text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
